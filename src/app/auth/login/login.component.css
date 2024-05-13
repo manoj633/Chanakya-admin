@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#login-container {
+    width: 70%;
+    height: 80%;
+    z-index: 0;
+    transition: box-shadow 1s;
+    box-shadow: 26px 26px 54px #b2adad, -26px -26px 54px #fcf3f3
+}
+
+#login-container:hover {
+    box-shadow: -20px -20px 60px #bebebe, 20px 20px 60px #ffffff;
+}
+
+.login-background {
+    width: 100%;
+    height: 100%;
+    z-index: 30
+}
+
+.login-card {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    clip-path: polygon(0 0, 40% 0, 100% 100%, 0% 100%);
+    padding: 25px 50px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}

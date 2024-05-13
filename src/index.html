@@ -4,9 +4,39 @@
     <meta charset="utf-8" />
     <title>ChanakyaAdmin</title>
     <base href="/" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <app-root></app-root>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        // VANTA.FOG({
+        //   el: "#container",
+        //   mouseControls: true,
+        //   touchControls: true,
+        //   gyroControls: false,
+        //   minHeight: 0.0,
+        //   minWidth: 0.0,
+        //   blurFactor: 0.7,
+        //   highlightColor: 0xb200ff,
+        //   midtoneColor: 0xc73321,
+        //   lowlightColor: 0x700b6,
+        //   baseColor: 0x0,
+        // });
+        VANTA.WAVES({
+          el: "#login-container",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+        });
+      });
+    </script>
   </body>
 </html>
